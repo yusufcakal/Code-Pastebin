@@ -7,10 +7,10 @@ http://getbootstrap.com/
 ###Syntax Highlighter
 http://prismjs.com/
 
-##index.php title font
+##Title font
 https://fonts.google.com/specimen/Bitter
 
-#Fonts
+##Body fonts
 https://fonts.google.com/specimen/Roboto
 
 #Screenshot
