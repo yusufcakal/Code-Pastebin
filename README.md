@@ -1,5 +1,4 @@
 # Code-Pastebin
-
 Ubuntu pastebin tarzı kodunuzu kayıt edip paylaşabileceğiniz bir php scripti.
 
 ###Design
