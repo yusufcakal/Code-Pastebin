@@ -4,7 +4,7 @@ Ubuntu pastebin tarzı kodunuzu kayıt edip paylaşabileceğiniz bir php scripti
 ###Design
 http://getbootstrap.com/ 
 
-#Syntax Highlighter
+###Syntax Highlighter
 http://prismjs.com/
 
 ###Title font
