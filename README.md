@@ -1,19 +1,23 @@
 # Code-Pastebin
 Ubuntu pastebin tarzı kodunuzu kayıt edip paylaşabileceğiniz bir php scripti.
 
-###Design
-http://getbootstrap.com/ 
+## Design
 
-###Syntax Highlighter
-http://prismjs.com/
+* http://getbootstrap.com/ 
 
-###Title font
-https://fonts.google.com/specimen/Bitter
+## Syntax Highlighter
 
-###Body fonts
-https://fonts.google.com/specimen/Roboto
+* http://prismjs.com/
 
-#Screenshot
+## Title font
+
+* https://fonts.google.com/specimen/Bitter
+
+## Body fonts
+
+* https://fonts.google.com/specimen/Roboto
+
+# Screenshot
 
 ![1](https://cloud.githubusercontent.com/assets/16848490/21478693/7a0de31c-cb56-11e6-8e3a-b1b3b4df2591.png)
 
