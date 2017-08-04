@@ -42,8 +42,8 @@
 		<div class="row">
 			<div class="col-md-12">
 				<pre style="margin-bottom: 20px;" class="line-numbers language-<?php echo $data['language']; ?>"> <!-- kod renklendirme -->
- -					<code   class="language-<?php echo $data['language']; ?>" ><?php echo $data['code']; ?></code>
- -				</pre>
+ 					<code   class="language-<?php echo $data['language']; ?>" ><?php echo $data['code']; ?></code>
+ 				</pre>
 			</div>
 		</div>
 
