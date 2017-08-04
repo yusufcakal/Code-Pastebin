@@ -12,7 +12,7 @@
 
 	$id = $database->getId();
 
-	header('Location: http://codepastebin.org/codepastegin/getcode.php?id='.$id);
+	header('Location: http://codepastebin.org/getcode.php?id='.$id);
 
 
 ?>
