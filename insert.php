@@ -1,5 +1,6 @@
 <?php 
 
+	ob_start();
 	require "database.php";
 
 	$name = $_POST['yourname'];
@@ -12,7 +13,8 @@
 
 	$id = $database->getId();
 
-	header('Location: http://codepastebin.org/getcode.php?id='.$id);
+	echo "header";
+	header('Location: http://code.yusufcakal.com/getcode.php?id='.$id);
 
 
 ?>

@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Insert and Sharing</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="image/icon.ico" />
+	<title>Insert Code</title>
 	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -13,14 +15,14 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h1 class="main-title">Kod Ekle ve Paylas</h1>
-				<div  class="alert alert-warning" id="alert" style=" padding: 15px 5px 5px 20px; display: none;"> <h4> <strong>Hata : </strong>Lütfen boş alan bırakmayın</div> </h4>
+				<h1 class="main-title">Add code</h1>
+				<div  class="alert alert-warning" id="alert" style=" padding: 15px 5px 5px 20px; display: none;"> <h4> <strong>Error : </strong>Please do not leave a space</div> </h4>
 			</div>
 		</div>
 	<form method="post" action="insert.php">
 		<div class="row row-margin">
 			<div class="col-md-3">
-				<h4>Adınız</h4>
+				<h4>Name</h4>
 			</div>
 			<div class="col-md-9">
 
@@ -32,7 +34,7 @@
 		</div>
 		<div class="row row-margin">
 			<div class="col-md-3">
-				<h4>Başlık </h4>
+				<h4>Title </h4>
 			</div>
 			<div class="col-md-9">
 
@@ -44,7 +46,7 @@
 		</div>
 		<div class="row row-margin">
 			<div class="col-md-3">
-				<h4>Kod Dili </h4>
+				<h4>Code Lang</h4>
 			</div>
 			<div class="col-md-9">
 
@@ -177,7 +179,7 @@
 		</div>
 		<div class="row row-margin">
 			<div class="col-md-3">
-				<h4>Kod</h4>
+				<h4>Code</h4>
 			</div>
 			<div class="col-md-9">
 
@@ -194,7 +196,7 @@
 			<div class="col-md-9">
 
 				<div class="form-group col-md-12" id="text">
-    			  <button type="submit" class="btn btn-default">Kaydet</button>
+    			  <button type="submit" class="btn btn-default">Save</button>
   				</div>
 			</div>
 		</div>

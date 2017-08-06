@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="image/icon.ico" />
+	<title>Code</title>
+</head>
+<body>
+
 <?php 
 
 	require "database.php";
@@ -32,11 +41,11 @@
 
 		<div class="row">
 
-		<h4 class="alert alert-success"> Paylaşmak için <a href=""> <?php echo $url; ?> </a> kopyalayabilirsiniz.  </h4>
+		<h4 class="alert alert-success"> You can copy <a href=""> <?php echo $url; ?> </a> to share  </h4>
 
 			<div class="col-md-12">
 				<h3><?php echo $data['title']; ?></h3>
-				<h4><?php echo $data['name']; ?> tarafından <?php echo $data['date']; ?>  tarihinde eklendi. </h4>
+				<h4><?php echo $data['name']; ?> from <?php echo $data['date']; ?> was added </h4>
 			</div>
 		</div>
 		<div class="row">
@@ -50,7 +59,7 @@
 	<?php	} else{ ?>
 				<div class="row">
 				<div class="col-md-12">
-					<h2> Sayfa Bulunamadı </h2>
+					<h2> Not found page </h2>
 				</div>
 			</div>
 	<?php  	} ?>
@@ -67,3 +76,8 @@
 	</script>
 </body>
 </html>
+
+
+</body>
+</html>
+

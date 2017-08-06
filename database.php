@@ -16,8 +16,9 @@
 
 			try {
 			     $this->db = new PDO("mysql:host=$this->hostname;dbname=$this->dbname", "$this->username", "$this->password");
+
 			} catch ( PDOException $e ){
-			     print $e->getMessage();
+			     echo $e->getMessage();	
 			}
 
 			if ($this->db) {
@@ -29,28 +30,31 @@
 		}
 
 		public function insertFunction($name,$language,$title,$code){
+
 			$code = htmlspecialchars($code);
 			date_default_timezone_set('Europe/Istanbul');
-			$date = date("d.m.Y");
+			$date = date("Y-m-d");
 
 			$this->name = $name;
 			$this->language = $language;
 			$this->title = $title;
 			$this->code = $code;
 
-			$query = $this->db->prepare("INSERT INTO code SET 
-			 name = ?,
-			 language = ?,
-			 title = ?, 
-			 code = ?,
-			 date = ?");
+				try {
 
-				$insert = $query->execute(array($name,$language,$title,$code,$date));
-				if ($insert){
-				    //print "Kayıt Edildi.";
-				}else{
-					//echo "Kayıt Edilemedi.";
+					$query = $this->db->prepare("INSERT INTO code SET 
+								 name = ?,
+								 language = ?,
+								 title = ?, 
+								 code = ?,
+								 date = ?");
+
+					$insert = $query->execute(array($name,$language,$title,$code,$date));
+
+				} catch (Exception $e) {
+					echo $e->getMessage();
 				}
+
 
 		}
 
