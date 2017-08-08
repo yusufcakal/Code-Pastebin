@@ -14,7 +14,7 @@
 	$id = $database->getId();
 
 	echo "header";
-	header('Location: http://code.yusufcakal.com/getcode.php?id='.$id);
+	header('Location: http://codepastebin.org/getcode.php?id='.$id);
 
 
 ?>
