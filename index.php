@@ -98,6 +98,7 @@
 					<option value="haskell">Haskell</option>
 					<option value="haxe">Haxe</option>
 					<option value="http">Http</option>
+					<option value="html">HTML</option>
 					<option value="icon">Icon</option>
 					<option value="inform7">Inform7</option>
 					<option value="ini">Ini</option>
@@ -171,6 +172,7 @@
 					<option value="vim">Vim</option>
 					<option value="wiki">Wiki</option>
 					<option value="xojo">Xojo</option>
+					<option value="xml">XML</option>
 					<option value="yaml">Yaml</option>
 				  </select>
   				</div>
