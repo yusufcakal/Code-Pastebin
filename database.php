@@ -18,15 +18,8 @@
 			     $this->db = new PDO("mysql:host=$this->hostname;dbname=$this->dbname", "$this->username", "$this->password");
 
 			} catch ( PDOException $e ){
-			     echo $e->getMessage();	
+			     die($e->getMessage());
 			}
-
-			if ($this->db) {
-				//echo "Veritabanı Bağlantısı Yapıldı.";
-			}else{
-				//echo "Veritabanına Bağlanılamadı.";
-			}
-
 		}
 
 		public function insertFunction($name,$language,$title,$code){
@@ -59,9 +52,10 @@
 		}
 
 		public function selectFunction($id){
-			$query = $this->db->query("SELECT * FROM code 
-				WHERE id = '{$id}'")->fetch(PDO::FETCH_ASSOC);
-			return $query;
+			$query = $this->db->query("SELECT * FROM code WHERE id = :id");
+			$query->bindParam(":id",$id, PDO::PARAM_INT);
+			$query->execute();
+			return $query->fetch(PDO::FETCH_ASSOC);
 		}
 
 		public function getId(){
