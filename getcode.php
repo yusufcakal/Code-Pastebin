@@ -13,7 +13,7 @@
 
 	$code = new Database;
 
-	$id = $_GET['id'];
+	$id = (int)$_GET['id'];
 
 	$data = $code->selectFunction($id);
 
